@@ -9,3 +9,7 @@ import random
 list = [20, 30, 40, 50 ,60, 70, 80]
 sampling = random.sample(list, k=5)
 print(sampling)
+
+list = [20, 30, 40, 50 ,60, 70, 80]
+choice = random.choices(list, k=10)
+print(choice)
