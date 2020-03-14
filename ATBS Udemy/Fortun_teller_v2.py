@@ -8,16 +8,16 @@ class Fortune:
         self.color = color
         self.age = age
 
-
+    @classmethod
     def from_input(self):
         name = input('Name: ')
         color = input('Color: ')
         age = int(input('Age: '))
-        return self(name,color,age)
+        return self(name, color, age)
 
-    def random_fortune():
+    def random_fortune(self):
         random_no = random.randint(1, 9)
-        print("Hi " + __name__)
+        print("Hi " +  self.name)
         if random_no == 1:
             print("you are in luck today")
         else:
@@ -27,6 +27,6 @@ class Fortune:
 #    def greeting(name):
 #        return "Hi" + name
 
-#Fortune.from_input()
+user = Fortune.from_input()
 #print(Fortune.greeting(" Rahul"))
-Fortune.random_fortune()
+user.random_fortune()
