@@ -2,7 +2,7 @@ import random
 
 class Fortune:
     random_no=random.randint(1, 9)
-    # check how to use these variables from init
+    # check how to use these variables from init.
     def  __init__(self, name, color, age):
         self.name = name
         self.color = color
