@@ -15,7 +15,7 @@ class Fortune:
             input('Color: '),
             int(input('Age: ')),
         )
-
+    @staticmethod
     def random_fortune():
         random_no = random.randint(1, 9)
         if random_no == 1:
