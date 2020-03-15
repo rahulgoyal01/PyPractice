@@ -1,32 +1,30 @@
 import random
-
 class Fortune:
+    name = ""
+    color = ""
+    age = 0
 
-    # check how to use these variables from init
     def  __init__(self, name, color, age):
         self.name = name
         self.color = color
         self.age = age
 
-    @classmethod
+    @staticmethod
     def from_input(self):
         name = input('Name: ')
         color = input('Color: ')
         age = int(input('Age: '))
-        return self(name, color, age)
+        return Fortune(name,color,age)
 
+    @classmethod
     def random_fortune(self):
+        print("Hi " + self.name)
         random_no = random.randint(1, 9)
-        print("Hi " +  self.name)
         if random_no == 1:
             print("you are in luck today")
         else:
             print("Bad Luck mate")
 
 
-#    def greeting(name):
-#        return "Hi" + name
-
 user = Fortune.from_input()
-#print(Fortune.greeting(" Rahul"))
 user.random_fortune()
