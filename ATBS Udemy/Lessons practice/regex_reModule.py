@@ -26,3 +26,9 @@ print(mo1)
 
 # findall returns all the number in a string
 # in a list
+
+#Pipe character
+
+batRegex = re.compile(r'Bat(man|mobile|copter|bike)')
+mo = batRegex.search('Batman has a batmobile and batcopter.')
+print(mo.group()) 
