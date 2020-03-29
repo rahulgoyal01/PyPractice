@@ -16,8 +16,8 @@ print(phnRegex.findall(resume))
 
 # \d = [0|1|2|3|4|5|6|7|8|9], any numeric digit
 # \D = any char except numeric simply not \d
-# \w = any char
-# \s = any space, tab or new line
+# \w = any char # \W = not any char
+# \s = any space, tab or new line # \S = not \s
 
 lyrics = '12 d d, 11 p p, 10 l l, 9 l d, 8 m m'
 
