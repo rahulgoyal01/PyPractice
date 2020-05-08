@@ -1,0 +1,4 @@
+#use the extension or file name that not needed to commit and pushed to Git.
+
+*.exe
+*.log
