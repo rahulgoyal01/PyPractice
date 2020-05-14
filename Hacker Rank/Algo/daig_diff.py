@@ -25,7 +25,7 @@ def diagonalDifference(arr):
 
 
 if __name__ == '__main__':
-    fptr = open(os.environ['OUTPUT_PATH'], 'w')
+#    fptr = open(os.environ['OUTPUT_PATH'], 'w')
 
     n = int(input().strip())
 
@@ -34,8 +34,9 @@ if __name__ == '__main__':
     for _ in range(n):
         arr.append(list(map(int, input().rstrip().split())))
 
+    print(arr)
     result = diagonalDifference(arr)
+    print(result)
+ #   fptr.write(str(result) + '\n')
 
-    fptr.write(str(result) + '\n')
-
-    fptr.close()
+ #   fptr.close()
